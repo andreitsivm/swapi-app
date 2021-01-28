@@ -1,0 +1,18 @@
+.card {
+  width: 100%;
+  padding: 20px;
+  background-color: #494944;
+  color: #fff;
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  background-color: #fff;
+  color: #494949;
+}
+.card .title {
+  cursor: pointer;
+}
