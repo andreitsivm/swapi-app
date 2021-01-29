@@ -2,7 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import { StartPage, PeoplePage, CharacterPage } from "pages";
 import { Container } from "@material-ui/core";
-import { routes } from "./const";
+import { routes } from "const";
 import "./App.css";
 
 function App() {
