@@ -12,6 +12,7 @@ import { useHistory } from "react-router-dom";
 import { urlSelector } from "store";
 import { Api } from "api";
 import { dictionary, routes } from "const";
+import classes from "./CharacterPage.module.css";
 
 const CharacterPage = () => {
   const url = useSelector(urlSelector);
@@ -31,6 +32,7 @@ const CharacterPage = () => {
         .finally(() => setLoading(false));
     }
   }, [url]);
+
   useEffect(() => {
     if (character) {
       setLoading(true);
@@ -59,7 +61,7 @@ const CharacterPage = () => {
   }
 
   return (
-    <Card style={{ padding: 15, marginTop: 40 }}>
+    <Card className={classes.content}>
       <CardContent>
         <Typography variant="h1">{character?.name}</Typography>
         <Typography variant="body1">{`${dictionary.GENDER} ${character?.gender}`}</Typography>

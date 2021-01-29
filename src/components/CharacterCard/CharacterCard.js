@@ -22,4 +22,5 @@ CharacterCard.propTypes = {
   }),
   handleOpen: propTypes.func,
 };
+
 export default CharacterCard;
